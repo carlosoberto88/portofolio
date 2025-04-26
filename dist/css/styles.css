@@ -11134,7 +11134,7 @@ h6,
   position: relative;
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
-  background: url("/assets/img/backgroun2.avif") center center/cover no-repeat;
+  background: url("../assets/img/backgroun2.avif") center center/cover no-repeat;
   overflow: hidden;
 }
 .masthead::before {
