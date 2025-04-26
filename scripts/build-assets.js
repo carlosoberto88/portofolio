@@ -1,5 +1,4 @@
 'use strict';
 
-const renderAssets = require('./render-assets');
-
-renderAssets();
+const shell = require("shelljs");
+shell.cp("-R", "src/assets/", "dist/assets/");
