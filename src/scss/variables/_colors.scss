@@ -1,14 +1,14 @@
-// 
+//
 // Colors
-// 
+//
 
 //- Override and add to color system
-$background: #0D1117; // Very dark blue/black
-$background-light: #161B22; // Slightly lighter background
-$text-primary: #C9D1D9; // Light gray for primary text
-$text-secondary: #8B949E; // Softer gray for secondary text
-$accent: #58A6FF; // Bright blue for links and accents
-$highlight: #F778BA; // Pink for buttons and highlights
+$background: #0D1117; // Very dark background
+$background-light: #161B22; // Slightly lighter dark for sections
+$text-primary: #FFFFFF; // White text
+$text-secondary: #C9D1D9; // Light gray for secondary text
+$accent: #0072CE; // Blue Electric for links and accents (Pantone 2935 C)
+$highlight: #0072CE; // Same blue for highlight buttons (consistent branding)
 
 //- Override primary color
 $primary: $accent;
@@ -16,4 +16,4 @@ $secondary: $text-secondary;
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio: 2.4;
+$min-contrast-ratio: 4.5;

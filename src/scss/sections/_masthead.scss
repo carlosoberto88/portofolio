@@ -3,8 +3,32 @@
 // 
 
 .masthead {
+    position: relative;
     padding-top: calc(6rem + 74px);
     padding-bottom: 6rem;
+    background: url('../assets/img/backgroun2.avif') center center/cover no-repeat;
+        overflow: hidden;
+    
+        // Overlay for opacity
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 17, 23, 0.6); // dark overlay, adjust opacity as needed
+            z-index: 1;
+        }
+    
+        // Ensure content is above overlay
+        .container,
+        .masthead-heading,
+        .masthead-subheading,
+        .masthead-avatar {
+            position: relative;
+            z-index: 2;
+        }
 
     .masthead-heading {
         font-size: 2.75rem;

@@ -14,8 +14,9 @@ html {
 
 body {
     background-color: $background;
-    color: $text-primary;
+    color: $text-primary !important;
 }
+
 // Styling for page sections
 .page-section {
     padding: 6rem 0;
@@ -23,7 +24,7 @@ body {
     .page-section-heading {
         font-size: 2.25rem;
         line-height: 2rem;
-        color: $text-primary;
+        color: $text-primary !important;
     }
 
     @include media-breakpoint-up(lg) {
@@ -43,8 +44,16 @@ body {
     background-color: $accent !important;
 }
 
-// Text colors
-.text-primary {
+// Text colors with higher specificity
+.text-primary,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.lead {
     color: $text-primary !important;
 }
 
@@ -92,7 +101,7 @@ body {
 .masthead {
     background-color: $background !important;
     color: $text-primary !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 // Alternating section backgrounds
@@ -132,7 +141,7 @@ body {
 .footer {
     background-color: $background !important;
     color: $text-primary !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 // Divider styling
@@ -154,6 +163,54 @@ body {
 // List styling
 .list-unstyled {
     li {
-        color: $text-primary;
+        color: $text-primary !important;
+        }
+        }
+        
+        // Project Links Section
+        #project-links {
+            background-color: $background-light !important;
+        
+            .card {
+                background-color: $background !important;
+                border: 1px solid rgba($text-primary, 0.1) !important;
+        
+                .card-title {
+                    color: $text-primary !important;
+                }
+        
+                .card-text {
+                    color: $text-secondary !important;
+                }
+        
+                .btn-outline-light {
+                    color: $accent !important;
+                    border-color: $accent !important;
+        
+                    &:hover {
+                        background-color: $accent !important;
+                        color: $background !important;
+                    }
+                }
+            }
+        
+            .carousel-control-prev,
+            .carousel-control-next {
+                color: $text-primary !important;
+        
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    filter: invert(1) grayscale(100);
+                }
+            }
+        
+            .carousel-indicators {
+                button {
+                    background-color: $text-primary !important;
+        
+                    &.active {
+                        background-color: $accent !important;
+                    }
+                }
     }
 }
