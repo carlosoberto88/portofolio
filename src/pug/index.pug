@@ -7,6 +7,25 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='Carlos Oberto - Senior Full Stack Developer Portfolio')
         meta(name='author', content='Carlos Oberto')
+        meta(name='google', content='notranslate')
+        
+        // SEO Meta Tags
+        meta(name='keywords', content='Carlos Oberto, Full Stack Developer, Web Developer, PHP Developer, Laravel Developer, JavaScript Developer, Portfolio')
+        meta(name='robots', content='index, follow')
+        meta(name='language', content='English')
+        
+        // Open Graph / Social Media Meta Tags
+        meta(property='og:title', content='Carlos Oberto - Senior Full Stack Developer')
+        meta(property='og:description', content='Senior Full Stack Developer with over 5 years of experience in developing high-performance web applications.')
+        meta(property='og:image', content='assets/img/avataaars.svg')
+        meta(property='og:url', content='https://carlosdev.site')
+        meta(property='og:type', content='website')
+        
+        // Twitter Card Meta Tags
+        meta(name='twitter:card', content='summary_large_image')
+        meta(name='twitter:title', content='Carlos Oberto - Senior Full Stack Developer')
+        meta(name='twitter:description', content='Senior Full Stack Developer with over 5 years of experience in developing high-performance web applications.')
+        meta(name='twitter:image', content='assets/img/avataaars.svg')
 
         title Carlos Oberto - Senior Full Stack Developer
 
@@ -272,27 +291,16 @@ html(lang='en')
                 // Contact Section Form
                 .row.justify-content-center
                     .col-lg-8.col-xl-7
-
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
-
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
-
-                        form#contactForm(data-sb-form-api-token='API_TOKEN')
-
+                        form#contactForm
                             // Name input
                             .form-floating.mb-3
                                 input#name.form-control(
                                     type='text',
                                     placeholder='Enter your name...',
-                                    data-sb-validations='required'
+                                    required
                                 )
                                 label(for='name') Full name
-                                .invalid-feedback(data-sb-feedback='name:required')
+                                .invalid-feedback
                                     | A name is required.
 
                             // Email address input
@@ -300,59 +308,55 @@ html(lang='en')
                                 input#email.form-control(
                                     type='email',
                                     placeholder='name@example.com',
-                                    data-sb-validations='required,email'
+                                    required
                                 )
                                 label(for='email') Email address
-                                .invalid-feedback(data-sb-feedback='email:required')
-                                    | An email is required.
-                                .invalid-feedback(data-sb-feedback='email:email')
-                                    | Email is not valid.
+                                .invalid-feedback
+                                    | A valid email is required.
 
                             // Phone number input
                             .form-floating.mb-3
                                 input#phone.form-control(
                                     type='tel',
                                     placeholder='(123) 456-7890',
-                                    data-sb-validations='required'
+                                    required
                                 )
                                 label(for='phone') Phone number
-                                .invalid-feedback(data-sb-feedback='phone:required')
+                                .invalid-feedback
                                     | A phone number is required.
 
                             // Message input
                             .form-floating.mb-3
                                 textarea#message.form-control(
-                                    type='text',
                                     placeholder='Enter your message here...',
                                     style='height: 10rem;',
-                                    data-sb-validations='required'
+                                    required
                                 )
                                 label(for='message') Message
-                                .invalid-feedback(data-sb-feedback='message:required')
+                                .invalid-feedback
                                     | A message is required.
 
                             // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
                             #submitSuccessMessage.d-none
                                 .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
+                                    .fw-bolder.text-success Thank you for your message! I'll get back to you soon.
 
                             // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
                             #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
+                                .text-center.mb-3
+                                    .fw-bolder.text-danger Error sending message. Please try again later.
+
+                            // Loading spinner
+                            #submitLoadingMessage.d-none
+                                .text-center.mb-3
+                                    .spinner-border.text-primary(role='status')
+                                        span.visually-hidden Loading...
 
                             // Submit Button
-                            button#submitButton.btn.btn-primary.btn-xl.disabled(type='submit') Send
+                            button#submitButton.btn.btn-primary.btn-xl(type='submit')
+                                span.button-text Send Message
+                                span.spinner-border.spinner-border-sm.ms-2.d-none(role='status')
+                                    span.visually-hidden Loading...
 
         // Footer
         footer.footer.text-center
@@ -394,10 +398,4 @@ html(lang='en')
 
         // Core theme JS
         script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        script(src='js/contact-form.js')
