@@ -1,26 +1,51 @@
 // Portfolio Modal 1
 #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal1', aria-hidden='true')
     .modal-dialog.modal-xl
-        .modal-content
+        .modal-content.bg-primary
             .modal-header.border-0
-                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-            .modal-body.text-center.pb-5
-                .container
+                button.btn-close.btn-close-white(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5.text-white
+                .container.px-0
                     .row.justify-content-center
-                        .col-lg-8
+                        .col-lg-10
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+                            h2.portfolio-modal-title.text-white.text-uppercase.mb-0 Ingenious Agency
                             // Icon Divider
-                            .divider-custom
+                            .divider-custom.divider-light
                                 .divider-custom-line
                                 .divider-custom-icon
                                     i.fas.fa-star
                                 .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cabin.png', alt='...')
+                            img.img-fluid.rounded.shadow-lg.mb-5(src='assets/img/portfolio/cabin.png', alt='Ingenious Agency Project')
                             // Portfolio Modal - Text
-                            p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(data-bs-dismiss='modal')
-                                i.fas.fa-xmark.fa-fw
-                                | Close Window
+                            .card.bg-transparent.border-light.shadow-sm.mb-4
+                                .card-body
+                                    h4.text-white.mb-3 Sr Full Stack Developer (2024 - Present)
+                                    p.mb-4
+                                        | As a Senior Full Stack Developer at Ingenious Agency, I've made significant contributions to improving the platform's performance and user experience:
+                                    ul.list-unstyled.mb-4
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Optimized code for performance, enhancing page load times by 50% through meticulous code optimization and efficient resource management
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Revamped the e-commerce platform, resulting in a 75% improvement in customer experience and satisfaction
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Streamlined payment integration with Stripe, boosting customer satisfaction by 50% through seamless and reliable payment processing
+                                    .tech-stack.bg-transparent.p-3.rounded.border.border-light
+                                        h5.text-white.mb-3 Tech Stack
+                                        .d-flex.flex-wrap.justify-content-center.gap-2
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Laravel
+                                            span.badge.bg-dark.text-white.me-2.mb-2 jQuery
+                                            span.badge.bg-dark.text-white.me-2.mb-2 HTML
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Bootstrap
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Azure
+                                            span.badge.bg-dark.text-white.me-2.mb-2 SQL Server
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Figma
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Stripe
+                                            span.badge.bg-dark.text-white.me-2.mb-2 VueJS
+                                            span.badge.bg-dark.text-white.me-2.mb-2 InertiaJS
+                                            span.badge.bg-dark.text-white.me-2.mb-2 ReactJS
+                                            span.badge.bg-dark.text-white.me-2.mb-2 ROR

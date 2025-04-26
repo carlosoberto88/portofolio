@@ -5,10 +5,10 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Carlos Oberto - Senior Full Stack Developer Portfolio')
+        meta(name='author', content='Carlos Oberto')
 
-        title Freelancer - Start Bootstrap Theme
+        title Carlos Oberto - Senior Full Stack Developer
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -28,7 +28,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
             .container
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') Carlos Oberto
                 button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu 
                     i.fas.fa-bars
@@ -39,15 +39,17 @@ html(lang='en')
                         li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') About
                         li.nav-item.mx-0.mx-lg-1
+                            a.nav-link.py-3.px-0.px-lg-3.rounded(href='#skills') Skills
+                        li.nav-item.mx-0.mx-lg-1
                             a.nav-link.py-3.px-0.px-lg-3.rounded(href='#contact') Contact
 
         // Masthead
         header.masthead.bg-primary.text-white.text-center
             .container.d-flex.align-items-center.flex-column
                 // Masthead Avatar Image
-                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='...')
+                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='Carlos Oberto')
                 // Masthead Heading
-                h1.masthead-heading.text-uppercase.mb-0 Start Bootstrap
+                h1.masthead-heading.text-uppercase.mb-0 Carlos Oberto
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -55,13 +57,13 @@ html(lang='en')
                         i.fas.fa-star
                     .divider-custom-line
                 // Masthead Subheading
-                p.masthead-subheading.font-weight-light.mb-0 Graphic Artist - Web Designer - Illustrator
+                p.masthead-subheading.font-weight-light.mb-0 Senior Full Stack Developer
 
         // Portfolio Section
         section#portfolio.page-section.portfolio
             .container
                 // Portfolio Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Portfolio
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Experience
                 // Icon Divider
                 .divider-custom
                     .divider-custom-line
@@ -71,53 +73,113 @@ html(lang='en')
                 // Portfolio Grid Items
                 .row.justify-content-center
                     // Portfolio Item 1
-                    .col-md-6.col-lg-4.mb-5
+                    .col-md-6.col-lg-3.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal1')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/cabin.png', alt='Ingenious Agency')
+                            .text-center.mt-2
+                                h5 Ingenious Agency
+                                p.text-muted Sr Full Stack Developer (2024 - Present)
                     // Portfolio Item 2
-                    .col-md-6.col-lg-4.mb-5
+                    .col-md-6.col-lg-3.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal2')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/cake.png', alt='Jedari')
+                            .text-center.mt-2
+                                h5 Jedari
+                                p.text-muted Sr PHP Developer (2023 - 2024)
                     // Portfolio Item 3
-                    .col-md-6.col-lg-4.mb-5
+                    .col-md-6.col-lg-3.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal3')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/circus.png', alt='MagnusMas')
+                            .text-center.mt-2
+                                h5 MagnusMas
+                                p.text-muted Sr PHP Developer (2019 - 2023)
                     // Portfolio Item 4
-                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                    .col-md-6.col-lg-3.mb-5
                         .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal4')
                             .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
                                 .portfolio-item-caption-content.text-center.text-white
                                     i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/game.png', alt='...')
-                    // Portfolio Item 5
-                    .col-md-6.col-lg-4.mb-5.mb-md-0
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal5')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/safe.png', alt='...')
-                    // Portfolio Item 6
-                    .col-md-6.col-lg-4
-                        .portfolio-item.mx-auto(data-bs-toggle='modal', data-bs-target='#portfolioModal6')
-                            .portfolio-item-caption.d-flex.align-items-center.justify-content-center.h-100.w-100
-                                .portfolio-item-caption-content.text-center.text-white
-                                    i.fas.fa-plus.fa-3x
-                            img.img-fluid(src='assets/img/portfolio/submarine.png', alt='...')
+                            img.img-fluid(src='assets/img/portfolio/game.png', alt='BlueCard Ecuador')
+                            .text-center.mt-2
+                                h5 BlueCard Ecuador
+                                p.text-muted Jr PHP Developer (2017 - 2019)
+
+        // Project Links Section
+        section#project-links.page-section.bg-primary.text-white.mb-0
+            .container
+                // Project Links Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-white Project Links
+                // Icon Divider
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Project Links Carousel
+                .row.justify-content-center
+                    .col-lg-8
+                        #projectLinksCarousel.carousel.slide(data-bs-ride='carousel')
+                            .carousel-inner
+                                .carousel-item.active
+                                    .card.bg-transparent.border-light
+                                        .card-body.text-center
+                                            h4.card-title Ingenious Agency
+                                            p.card-text Sr Full Stack Developer (2024 - Present)
+                                            a.btn.btn-outline-light.btn-lg(href='https://www.jedari.com', target='_blank')
+                                                i.fas.fa-external-link-alt.me-2
+                                                | Visit Website
+                                .carousel-item
+                                    .card.bg-transparent.border-light
+                                        .card-body.text-center
+                                            h4.card-title Jedari
+                                            p.card-text Sr PHP Developer (2023 - 2024)
+                                            a.btn.btn-outline-light.btn-lg(href='https://getset.com', target='_blank')
+                                                i.fas.fa-external-link-alt.me-2
+                                                | Visit Website
+                                .carousel-item
+                                    .card.bg-transparent.border-light
+                                        .card-body.text-center
+                                            h4.card-title MagnusMas
+                                            p.card-text Sr PHP Developer (2019 - 2023)
+                                            a.btn.btn-outline-light.btn-lg(href='https://agoraexchange.com', target='_blank')
+                                                i.fas.fa-external-link-alt.me-2
+                                                | Visit Website
+                                .carousel-item
+                                    .card.bg-transparent.border-light
+                                        .card-body.text-center
+                                            h4.card-title BlueCard Ecuador
+                                            p.card-text Jr PHP Developer (2017 - 2019)
+                                            a.btn.btn-outline-light.btn-lg(href='https://bluecard.com', target='_blank')
+                                                i.fas.fa-external-link-alt.me-2
+                                                | Visit Website
+                            // Carousel Controls
+                            button.carousel-control-prev(type='button', data-bs-target='#projectLinksCarousel', data-bs-slide='prev')
+                                span.carousel-control-prev-icon(aria-hidden='true')
+                                span.visually-hidden Previous
+                            button.carousel-control-next(type='button', data-bs-target='#projectLinksCarousel', data-bs-slide='next')
+                                span.carousel-control-next-icon(aria-hidden='true')
+                                span.visually-hidden Next
+                            // Carousel Indicators
+                            .carousel-indicators
+                                button.active(type='button', data-bs-target='#projectLinksCarousel', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+                                button(type='button', data-bs-target='#projectLinksCarousel', data-bs-slide-to='1', aria-label='Slide 2')
+                                button(type='button', data-bs-target='#projectLinksCarousel', data-bs-slide-to='2', aria-label='Slide 3')
+                                button(type='button', data-bs-target='#projectLinksCarousel', data-bs-slide-to='3', aria-label='Slide 4')
 
         // About Section
         section#about.page-section.bg-primary.text-white.mb-0
             .container
                 // About Section Heading
-                h2.page-section-heading.text-center.text-uppercase.text-white About
+                h2.page-section-heading.text-center.text-uppercase.text-white About Me
                 // Icon Divider
                 .divider-custom.divider-light
                     .divider-custom-line
@@ -126,17 +188,75 @@ html(lang='en')
                     .divider-custom-line
                 // About Section Content
                 .row
+                    .col-lg-8.mx-auto
+                        p.lead.mb-5
+                            | I am a Senior Full Stack Developer with over 5 years of experience in developing high-performance web applications. Based in Quito, Ecuador, I specialize in creating robust and scalable solutions using modern technologies and best practices.
+                        p.lead.mb-5
+                            | Throughout my career, I've worked with various companies to deliver exceptional results, consistently improving performance, user experience, and business outcomes. My expertise spans across full-stack development, with a particular focus on PHP, Laravel, and modern JavaScript frameworks.
+                        p.lead.mb-5
+                            | I am passionate about writing clean, maintainable code and staying up-to-date with the latest technologies and development practices. My goal is to help businesses achieve their objectives through innovative technical solutions.
+
+        // Skills Section
+        section#skills.page-section.bg-white.mb-0
+            .container
+                // Skills Section Heading
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Skills & Expertise
+                // Icon Divider
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                // Skills Section Content
+                .row
                     .col-lg-4.ms-auto
-                        p.lead
-                            | Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+                        h4.text-uppercase.mb-4 Programming Languages
+                        ul.list-unstyled
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | PHP (Advanced)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | JavaScript (Advanced)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | HTML (Advanced)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | CSS (Intermediate)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | Redis (Intermediate)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | Ruby (Intermediate)
                     .col-lg-4.me-auto
-                        p.lead
-                            | You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-                // About Section Button
-                .text-center.mt-4
-                    a.btn.btn-xl.btn-outline-light(href='https://startbootstrap.com/theme/freelancer/')
-                        i.fas.fa-download.me-2
-                        | Free Download!
+                        h4.text-uppercase.mb-4 Frameworks & Tools
+                        ul.list-unstyled
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | Laravel (Advanced)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | Livewire (Advanced)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | jQuery (Advanced)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | AWS (Intermediate)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | GCS (Intermediate)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | VueJS (Intermediate)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | ReactJS (Intermediate)
+                            li.mb-2
+                                i.fas.fa-check.text-primary.me-2
+                                | ROR (Intermediate)
 
         // Contact Section
         section#contact.page-section
@@ -242,27 +362,21 @@ html(lang='en')
                     .col-lg-4.mb-5.mb-lg-0
                         h4.text-uppercase.mb-4 Location
                         p.lead.mb-0
-                            | 2215 John Daniel Drive
+                            | Quito, Ecuador (ECT)
                             br
-                            | Clark, MO 65243
+                            | (+593) 984992610
                     // Footer Social Icons
                     .col-lg-4.mb-5.mb-lg-0
-                        h4.text-uppercase.mb-4 Around the Web
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-facebook-f
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-twitter
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-linkedin-in
-                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
-                            i.fab.fa-fw.fa-dribbble
+                        h4.text-uppercase.mb-4 Connect With Me
+                        a.btn.btn-outline-dark.btn-social.mx-1(href='mailto:carlos.oberto88@gmail.com')
+                            i.fas.fa-envelope
+                        a.btn.btn-outline-dark.btn-social.mx-1(href='https://www.linkedin.com/in/carlos-oberto-dev', target='_blank')
+                            i.fab.fa-linkedin-in
                     // Footer About Text
                     .col-lg-4
-                        h4.text-uppercase.mb-4 About Freelancer
+                        h4.text-uppercase.mb-4 About Me
                         p.lead.mb-0
-                            | Freelance is a free to use, MIT licensed Bootstrap theme created by 
-                            a(href='http://startbootstrap.com') Start Bootstrap
-                            | .
+                            | Senior Full Stack Developer with over 5 years of experience in developing high-performance web applications.
 
         // Copyright Section
         div.copyright.py-4.text-center.text-white
@@ -274,8 +388,6 @@ html(lang='en')
         include includes/portfolio-modal-2.pug
         include includes/portfolio-modal-3.pug
         include includes/portfolio-modal-4.pug
-        include includes/portfolio-modal-5.pug
-        include includes/portfolio-modal-6.pug
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')

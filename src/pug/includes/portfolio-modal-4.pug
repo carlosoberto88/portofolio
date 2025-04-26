@@ -1,26 +1,50 @@
 // Portfolio Modal 4
 #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal4', aria-hidden='true')
     .modal-dialog.modal-xl
-        .modal-content
+        .modal-content.bg-primary
             .modal-header.border-0
-                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-            .modal-body.text-center.pb-5
-                .container
+                button.btn-close.btn-close-white(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5.text-white
+                .container.px-0
                     .row.justify-content-center
-                        .col-lg-8
+                        .col-lg-10
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Controller
+                            h2.portfolio-modal-title.text-white.text-uppercase.mb-0 BlueCard Ecuador
                             // Icon Divider
-                            .divider-custom
+                            .divider-custom.divider-light
                                 .divider-custom-line
                                 .divider-custom-icon
                                     i.fas.fa-star
                                 .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/game.png', alt='...')
+                            img.img-fluid.rounded.shadow-lg.mb-5(src='assets/img/portfolio/game.png', alt='BlueCard Ecuador Project')
                             // Portfolio Modal - Text
-                            p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(data-bs-dismiss='modal')
-                                i.fas.fa-xmark.fa-fw
-                                | Close Window
+                            .card.bg-transparent.border-light.shadow-sm.mb-4
+                                .card-body
+                                    h4.text-white.mb-3 Jr PHP Developer (August 2017 - March 2019)
+                                    p.mb-4
+                                        | As a Jr PHP Developer at BlueCard Ecuador, I contributed to the development and maintenance of their web applications. My role involved creating new features, fixing bugs, and improving system performance.
+                                    ul.list-unstyled.mb-4
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Developed Quotes Module: Created a new quotes module using PHP and jQuery, increasing customer engagement by 40%.
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | System Maintenance and Improvements: Fixed and enhanced the existing system, leading to a decrease in user complaints.
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Refactored Legacy Code: Optimized performance by 30% through comprehensive refactoring of legacy code.
+                                    .tech-stack.bg-transparent.p-3.rounded.border.border-light
+                                        h5.text-white.mb-3 Tech Stack
+                                        .d-flex.flex-wrap.justify-content-center.gap-2
+                                            span.badge.bg-dark.text-white.me-2.mb-2 PHP
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Smarty
+                                            span.badge.bg-dark.text-white.me-2.mb-2 jQuery
+                                            span.badge.bg-dark.text-white.me-2.mb-2 HTML
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Bootstrap
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Linode
+                                            span.badge.bg-dark.text-white.me-2.mb-2 MySQL
+            .modal-footer.justify-content-center
+                button.btn.btn-primary(data-bs-dismiss='modal')
+                    i.fas.fa-xmark.fa-fw
+                    | Close Window

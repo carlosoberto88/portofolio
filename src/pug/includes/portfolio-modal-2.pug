@@ -1,26 +1,47 @@
 // Portfolio Modal 2
 #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal2', aria-hidden='true')
     .modal-dialog.modal-xl
-        .modal-content
+        .modal-content.bg-primary
             .modal-header.border-0
-                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-            .modal-body.text-center.pb-5
-                .container
+                button.btn-close.btn-close-white(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5.text-white
+                .container.px-0
                     .row.justify-content-center
-                        .col-lg-8
+                        .col-lg-10
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Tasty Cake
+                            h2.portfolio-modal-title.text-white.text-uppercase.mb-0 Jedari
                             // Icon Divider
-                            .divider-custom
+                            .divider-custom.divider-light
                                 .divider-custom-line
                                 .divider-custom-icon
                                     i.fas.fa-star
                                 .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/cake.png', alt='...')
+                            img.img-fluid.rounded.shadow-lg.mb-5(src='assets/img/portfolio/cake.png', alt='Jedari Project')
                             // Portfolio Modal - Text
-                            p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(data-bs-dismiss='modal')
-                                i.fas.fa-xmark.fa-fw
-                                | Close Window
+                            .card.bg-transparent.border-light.shadow-sm.mb-4
+                                .card-body
+                                    h4.text-white.mb-3 Sr PHP Developer (2023 - 2024)
+                                    p.mb-4
+                                        | During my time at Jedari, I focused on developing robust PHP applications and optimizing performance:
+                                    ul.list-unstyled.mb-4
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Developed a custom CMS system that reduced content management time by 40%
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Implemented caching strategies that improved page load times by 60%
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Created RESTful APIs that integrated with multiple third-party services
+                                    .tech-stack.bg-transparent.p-3.rounded.border.border-light
+                                        h5.text-white.mb-3 Tech Stack
+                                        .d-flex.flex-wrap.justify-content-center.gap-2
+                                            span.badge.bg-dark.text-white.me-2.mb-2 PHP
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Laravel
+                                            span.badge.bg-dark.text-white.me-2.mb-2 MySQL
+                                            span.badge.bg-dark.text-white.me-2.mb-2 JavaScript
+                                            span.badge.bg-dark.text-white.me-2.mb-2 jQuery
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Bootstrap
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Redis
+                                            span.badge.bg-dark.text-white.me-2.mb-2 RESTful APIs

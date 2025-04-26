@@ -12,6 +12,10 @@ html {
     scroll-padding-top: calc(#{$navbar-height} - 1px);
 }
 
+body {
+    background-color: $background;
+    color: $text-primary;
+}
 // Styling for page sections
 .page-section {
     padding: 6rem 0;
@@ -19,6 +23,7 @@ html {
     .page-section-heading {
         font-size: 2.25rem;
         line-height: 2rem;
+        color: $text-primary;
     }
 
     @include media-breakpoint-up(lg) {
@@ -26,5 +31,129 @@ html {
             font-size: 3rem;
             line-height: 2.5rem;
         }
+    }
+}
+
+// Custom background colors
+.bg-primary {
+    background-color: $background-light !important;
+}
+
+.bg-secondary {
+    background-color: $accent !important;
+}
+
+// Text colors
+.text-primary {
+    color: $text-primary !important;
+}
+
+.text-secondary {
+    color: $text-secondary !important;
+}
+
+// Button styles
+.btn-primary {
+    background-color: $highlight;
+    border-color: $highlight;
+
+    &:hover {
+        background-color: darken($highlight, 10%);
+        border-color: darken($highlight, 10%);
+    }
+}
+
+.btn-outline-light {
+    color: $text-primary;
+    border-color: $text-primary;
+
+    &:hover {
+        background-color: $text-primary;
+        color: $background;
+    }
+}
+
+// Navbar styling
+.navbar {
+    background-color: $background !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand,
+.nav-link {
+    color: $text-primary !important;
+}
+
+.nav-link:hover {
+    color: $accent !important;
+}
+
+// Masthead styling
+.masthead {
+    background-color: $background !important;
+    color: $text-primary !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Alternating section backgrounds
+#portfolio {
+    background-color: $background-light !important;
+    color: $text-primary !important;
+}
+
+#about {
+    background-color: $background !important;
+    color: $text-primary !important;
+}
+
+#skills {
+    background-color: $background-light !important;
+    color: $text-primary !important;
+}
+
+#contact {
+    background-color: $background !important;
+    color: $text-primary !important;
+}
+
+// Portfolio item styling
+.portfolio-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+// Footer styling
+.footer {
+    background-color: $background !important;
+    color: $text-primary !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Divider styling
+.divider-custom {
+    .divider-custom-line {
+        background-color: $text-primary;
+    }
+
+    .divider-custom-icon {
+        color: $text-primary;
+    }
+}
+
+// Portfolio item caption
+.portfolio-item-caption {
+    background-color: rgba($accent, 0.9);
+}
+
+// List styling
+.list-unstyled {
+    li {
+        color: $text-primary;
     }
 }

@@ -1,26 +1,47 @@
 // Portfolio Modal 3
 #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', aria-labelledby='portfolioModal3', aria-hidden='true')
     .modal-dialog.modal-xl
-        .modal-content
+        .modal-content.bg-primary
             .modal-header.border-0
-                button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close')
-            .modal-body.text-center.pb-5
-                .container
+                button.btn-close.btn-close-white(type='button', data-bs-dismiss='modal', aria-label='Close')
+            .modal-body.text-center.pb-5.text-white
+                .container.px-0
                     .row.justify-content-center
-                        .col-lg-8
+                        .col-lg-10
                             // Portfolio Modal - Title
-                            h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Circus Tent
+                            h2.portfolio-modal-title.text-white.text-uppercase.mb-0 MagnusMas
                             // Icon Divider
-                            .divider-custom
+                            .divider-custom.divider-light
                                 .divider-custom-line
                                 .divider-custom-icon
                                     i.fas.fa-star
                                 .divider-custom-line
                             // Portfolio Modal - Image
-                            img.img-fluid.rounded.mb-5(src='assets/img/portfolio/circus.png', alt='...')
+                            img.img-fluid.rounded.shadow-lg.mb-5(src='assets/img/portfolio/circus.png', alt='MagnusMas Project')
                             // Portfolio Modal - Text
-                            p.mb-4
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                            button.btn.btn-primary(data-bs-dismiss='modal')
-                                i.fas.fa-xmark.fa-fw
-                                | Close Window
+                            .card.bg-transparent.border-light.shadow-sm.mb-4
+                                .card-body
+                                    h4.text-white.mb-3 Sr PHP Developer (2019 - 2023)
+                                    p.mb-4
+                                        | At MagnusMas, I was responsible for developing and maintaining complex web applications:
+                                    ul.list-unstyled.mb-4
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Built a scalable e-commerce platform that processed over $1M in transactions annually
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Implemented advanced search functionality that improved user engagement by 40%
+                                        li.mb-3
+                                            i.fas.fa-check.text-white.me-2
+                                            | Developed a custom admin dashboard that streamlined business operations
+                                    .tech-stack.bg-transparent.p-3.rounded.border.border-light
+                                        h5.text-white.mb-3 Tech Stack
+                                        .d-flex.flex-wrap.justify-content-center.gap-2
+                                            span.badge.bg-dark.text-white.me-2.mb-2 PHP
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Laravel
+                                            span.badge.bg-dark.text-white.me-2.mb-2 MySQL
+                                            span.badge.bg-dark.text-white.me-2.mb-2 JavaScript
+                                            span.badge.bg-dark.text-white.me-2.mb-2 jQuery
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Bootstrap
+                                            span.badge.bg-dark.text-white.me-2.mb-2 Redis
+                                            span.badge.bg-dark.text-white.me-2.mb-2 AWS
